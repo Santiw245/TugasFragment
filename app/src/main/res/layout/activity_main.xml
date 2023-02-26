@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:text="@string/judul"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.tugasfragment.FragmentStatis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_statis" />
+
+
+
+
+    <!--    <TextView-->
+<!--        android:id="@+id/penjelasan_1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/penjelasan_1"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:padding="20dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="17sp"/>-->
+
+    <Button
+        android:id="@+id/button_kelebihan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lihat Kelebihan"
+        android:layout_marginTop="400dp"/>
+
+
+
+</LinearLayout>
