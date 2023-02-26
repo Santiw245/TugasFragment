@@ -26,19 +26,6 @@
         tools:layout="@layout/fragment_statis" />
 
 
-
-
-    <!--    <TextView-->
-<!--        android:id="@+id/penjelasan_1"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="@string/penjelasan_1"-->
-<!--        android:layout_marginRight="20dp"-->
-<!--        android:layout_marginLeft="20dp"-->
-<!--        android:padding="20dp"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textSize="17sp"/>-->
-
     <Button
         android:id="@+id/button_kelebihan"
         android:layout_width="match_parent"
