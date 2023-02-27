@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
 
     <TextView
         android:id="@+id/judul"
@@ -16,23 +17,40 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="34sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <fragment
         android:id="@+id/fragment"
         android:name="com.example.tugasfragment.FragmentStatis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="323dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/judul"
         tools:layout="@layout/fragment_statis" />
 
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:name="com.example.tugasfragment.FragmentDinamis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/judul"
+        tools:layout="@layout/fragment_dinamis" />
 
     <Button
-        android:id="@+id/button_kelebihan"
+        android:id="@+id/button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lihat Kelebihan"
-        android:layout_marginTop="400dp"/>
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:text="@string/open"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-
-</LinearLayout>

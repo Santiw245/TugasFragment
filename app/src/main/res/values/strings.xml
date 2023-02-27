@@ -7,4 +7,6 @@
     <string name="penjelasan_4">Soal angkut barang bawaan Honda PCX160 punya kelebihan di sektor ini, bagasi utama dengan volume 30 liter mampu menampung 1 buah helm fullface.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Lihat Kelebihan</string>
+    <string name="close">Mantap!</string>
 </resources>
